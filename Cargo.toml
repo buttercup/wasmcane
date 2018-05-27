@@ -3,5 +3,9 @@ name = "wasmcane"
 version = "0.1.0"
 authors = ["Sallar Kaboli <sallar.kaboli@gmail.com>"]
 
+[lib]
+crate-type = ["cdylib"]
+
 [dependencies]
-ring = "0.12.1"
+ring = "0.13.0-alpha3"
+wasm-bindgen = "0.2.11"
