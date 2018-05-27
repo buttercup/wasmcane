@@ -24,5 +24,8 @@ pub fn pbkdf2(password: &str, salt: &str, iterations: u32, bits: usize) -> Vec<u
 
 #[test]
 fn it_works() {
-    assert_eq!(add(2, 2), 4);
+    let buf = pbkdf2("password", "salt", 500, 512);
+    assert_eq!(buf.len(), 64);
+    assert!(buf[0] > 0);
+    assert!(buf[63] > 0);
 }
