@@ -1,0 +1,7 @@
+[package]
+name = "wasmcane"
+version = "0.1.0"
+authors = ["Sallar Kaboli <sallar.kaboli@gmail.com>"]
+
+[dependencies]
+ring = "0.12.1"
