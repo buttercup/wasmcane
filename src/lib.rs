@@ -9,11 +9,6 @@ use rcw::hmac::Hmac;
 use rcw::sha2::Sha256;
 
 #[wasm_bindgen]
-pub fn add(a: i32, b: i32) -> i32 {
-    a + b
-}
-
-#[wasm_bindgen]
 pub fn pbkdf2_derive(password: &str, salt: &str, iterations: u32, bits: usize) -> Vec<u8> {
     let mut to_store = Vec::new();
     let mut mac = Hmac::new(Sha256::new(), password.as_bytes());

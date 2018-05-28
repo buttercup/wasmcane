@@ -1,6 +1,6 @@
 [package]
 name = "wasmcane"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Sallar Kaboli <sallar.kaboli@gmail.com>", "Perry Mitchell <perry@perrymitchell.net>"]
 description = "Encryption tools for Buttercup in WASM format"
 license = "MIT"
