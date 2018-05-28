@@ -7,5 +7,5 @@ authors = ["Sallar Kaboli <sallar.kaboli@gmail.com>"]
 crate-type = ["cdylib"]
 
 [dependencies]
-ring = "0.13.0-alpha3"
 wasm-bindgen = "0.2.11"
+rcw = { path = "./rust-cardano/rcw/" }
